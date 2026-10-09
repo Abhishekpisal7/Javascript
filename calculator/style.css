@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e7e4e4
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 350px;
+    height: auto;
+    margin-top: 80px;
+    border: 1px solid rgba(0, 0, 0, 0.218);
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #D3E3FD;
+}
+
+.container > #inputCal {
+    padding: 25px 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.218);
+    text-align: right;
+    background-color: white;
+    color: black;
+    font-size: 26px;
+    overflow: hidden;
+}
+
+.container > .keys {
+    border: 1px solid rgba(0, 0, 0, 0.218);
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #D1DDE9;
+}
+
+.container .keys {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+
+.item1 {
+    grid-column: 1 / span 3;
+}
+
+.item17 {
+    grid-column: 3 /span 2;
+}
+
+.keys > * {
+    padding:  15px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.218);
+    transition: all linear 0.2s;
+}
+
+.keys > *:active {
+    scale: 0.95;
+}
