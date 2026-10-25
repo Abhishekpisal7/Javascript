@@ -40,8 +40,7 @@ setInterval(() => {
     }
     timeLimit--;
     timerValue.innerText = timeLimit;
-}
-    , 1000)
+}, 1000)
 
 function generateTarget() {
     target = Math.ceil(Math.random() * 10)
@@ -114,4 +113,5 @@ function restartGame() {
     generateTarget();
     circleContainer.innerHTML = ``
     generateNumber();
+    regenerateNumber();
 }
